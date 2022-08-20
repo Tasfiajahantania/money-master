@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-blue-500 font-bold text-center">Money Master</h1>
+    </header>
+
+    <main>
+        <div class="w-2/5 float-left mt-12 ml-10">
+            <img class="w-100 h-100" src="images/money-1.jpg" alt="">
+        </div>
+        <div class="w-2/5 float-left bg-slate-100 mt-12 text-center p-7 mb-8">
+
+
+            <h2 class="text-2xl font-bold">Income</h2>
+
+
+            <label class="font-bold" for="">income:</label>
+            <input id="income" class="w-4/5 ml-8 p-2 rounded mt-3 bg-slate-300" type="text">
+
+            <h2 class="text-2xl font-bold mt-3">Expense</h2>
+
+
+            <label class="font-bold" for="">Food:</label>
+            <input id="food" class="w-4/5 ml-8 p-2 rounded mt-3 bg-slate-300" type="text">
+
+            <label class="font-bold" for="">Rent:</label>
+            <input id="rent" class="w-4/5 ml-8 p-2 rounded mt-3 bg-slate-300" type="text">
+
+            <label class="font-bold" for="">Cloth:</label>
+            <input id="cloth" class="w-4/5 ml-8 p-2 rounded mt-3 bg-slate-300" type="text">
+
+
+            <button id="btn-calculate" class="bg-blue-400 py-3 px-8 mt-3 rounded text-white font-medium"
+                onclick="calculate()">Calculate</button>
+
+            <h2 class="text-2xl font-bold mt-3 p-2">Total Expense: <span id="total-expense">0.00</span></h2>
+
+            <h2 class="text-2xl font-bold mt-3 p-4">Blance: <span id="blance">0.00</span></h2>
+
+            <label class="font-bold mt-12" for="">Save:</label>
+            <input id="save" class="w-2/5 ml-8 p-2 rounded mt-3 bg-slate-300" type="text">
+            <span class="font-semibold mt-12">%</span>
+
+
+            <button id="btn-save" class="bg-blue-400 py-2 px-8 mt-3 rounded text-white font-medium mt-12"
+                onclick="discount()">Save</button>
+            <h2 id="saving-amoung" class="text-2xl font-bold mt-3 p-7">Saving Amount: <span id="save-blance">0.00</span>
+            </h2>
+            <h2 class="text-2xl font-bold mt-3">Remaining Blance: <span id="remaing-blance">0.00</span></h2>
+        </div>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
